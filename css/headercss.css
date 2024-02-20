@@ -1,0 +1,83 @@
+*{
+    padding: 0;margin: 0;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+header h2{
+    color: rgb(51, 15, 85);
+    padding:30px;
+    padding-top: 40px;
+    width: 100%;
+}
+header div{
+    width:100% ;
+    text-align:center;
+    /* padding:10px; */
+    position: absolute;
+    top:0px;
+    background-color:aliceblue;
+    z-index:0;
+}
+header button{
+background-color: transparent;
+border:0 ;outline:0;
+padding:12px;
+border-radius: 20px;
+font-weight: 700;
+color: blueviolet;
+}
+header button:hover{
+    font-weight: 800;
+    /* background-color: blue; */
+    
+}
+header a:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+nav{background-color: orange;
+    display:block ;
+    flex-direction: row-reverse;
+
+}
+nav a{
+    background-color: black;
+    padding:12px;
+    display:block;
+    color: white;
+    font-weight: 700;
+    transition:0.3s;
+}
+nav a:hover{
+    border-bottom: 3px solid orange;
+}
+
+@media screen and (min-width:600px){
+    nav{
+        display:flex;
+    }
+    header button{
+        background-color: green;
+        color:aliceblue;
+    
+    }
+    
+    header button:hover{
+        background-color: rgb(30, 170, 20);
+        
+    }
+    header div{
+        width:100% ;
+        text-align:center;
+        padding:10px;
+        position: static;
+        text-align: right;
+        top:0px;
+        background-color:aliceblue;
+        z-index:0;
+    }
+}
